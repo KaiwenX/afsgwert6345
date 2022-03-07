@@ -1,0 +1,15 @@
+while true do
+pcall(function()
+if game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("ReduceWalk") then
+game.Players.LocalPlayer.Character.BodyEffects.Movement.ReduceWalk:Destroy()
+end
+
+if game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("NoJumping") then
+game.Players.LocalPlayer.Character.BodyEffects.Movement.NoJumping:Destroy()
+end
+if game.Players.LocalPlayer.Character.BodyEffects.Movement:FindFirstChild("NoWalkSpeed") then
+game.Players.LocalPlayer.Character.BodyEffects.Movement.NoWalkSpeed:Destroy()
+end
+end)
+wait()
+end
